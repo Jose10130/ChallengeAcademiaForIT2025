@@ -1,0 +1,242 @@
+#root {
+  width: 90%; 
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  color: #333;
+}
+
+.App {
+  max-width: 900px; /* Ajusta el ancho de la aplicación */;
+  margin: 10px auto;
+  background-color: #15d6e85d;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/*branca1990*/
+h1, h2 {
+  text-align: center;
+   background-image: linear-gradient(50deg,
+            #6605e5,
+            #ff00b3,
+            #09F,
+            #00DDFF,
+            
+    );
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #010810;
+  border-radius: 10px;
+  background-color: #e9f5ff;
+  
+}
+
+.task-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: blue;
+}
+
+.task-form input[type="text"],
+.task-form textarea {
+  padding: 12px;
+  border: 1px solid #32c7e5;
+  border-radius: 4px;
+  font-size: 1.5em;
+  color : #333;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.task-form button {
+    width: 42%;
+    position: relative;
+    height: 70px;
+    left: 200px;
+   background-image: linear-gradient(150deg,
+            #6605e5,
+            #ff00b3,
+            #09F,
+            #00DDFF,
+            #3ed36c,
+            #f38729,
+            #c23ff5);
+  color: rgb(14, 14, 14);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+.task-form input{
+  background-color: rgba(255, 255, 255, 0.99);
+}/*color a modificar */
+.task-form textarea#description{
+  background-color: #fefefd; 
+} 
+
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+.task-form .cancel-button {
+  background-color: #6c757d;
+  margin-top: 10px;
+}
+
+.task-form .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.tasks-display {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item.completed {
+  background-color: #d4edda;
+  border-color: #28a745;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-item h3 {
+  margin: 0 0 5px 0;
+  color: #007bff;
+}
+
+.task-item p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.task-item small {
+  color: #888;
+  font-size: 0.8em;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.task-actions button:nth-child(1) { 
+  background-color: #28a745;
+  color: white;
+}
+
+.task-actions button:nth-child(1):hover {
+  background-color: #218838;
+}
+
+.task-actions button:nth-child(2) { /* Editar */
+  background-color: #ffc107;
+  color: #333;
+}
+
+.task-actions button:nth-child(2):hover {
+  background-color: #e0a800;
+}
+
+.task-actions button:nth-child(3) { /* Eliminar */
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-actions button:nth-child(3):hover {
+  background-color: #c82333;
+}
+ @media screen and (max-width:750px) {
+    html {
+      font-size: 12px;
+    }
+  }
+    @media screen and (max-width:580px) {
+    html {
+      font-size: 15px;
+    }
+  }
